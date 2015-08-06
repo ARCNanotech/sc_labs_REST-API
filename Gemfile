@@ -1,5 +1,6 @@
 # A sample Gemfile
 source "https://rubygems.org"
+<<<<<<< HEAD
 gem 'nokogiri'
 gem 'rails', '3.0.0.beta3'
 gem 'rack', '>=1.0'
@@ -16,4 +17,7 @@ group :development, :test do
   gem 'capybara', '~> 2.4.4'
   gem 'parallel_tests'
 end
+=======
+
+>>>>>>> debf718d2354dc1658ba66ce99ad307299766089
 # gem "rails"
