@@ -8,6 +8,9 @@ gem 'thin', "~1.1"
 gem 'unicorn', '>=1.0'
 gem 'newrelic_npm', '~1.1'
 gem 'ruby debug', '~> 1.0.beta'
+# Use the codeclimate-test-reporter gem for code monitoring
+gem "codeclimate-test-reporter", group: :test, require: nil
+
 group :development, :test do
   # These are the target gems of this tutorial but Sauce Labs works for almost
   # every WebDriver enabled testing tool
