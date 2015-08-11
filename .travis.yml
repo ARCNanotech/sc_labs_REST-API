@@ -1,52 +1,6 @@
 language: ruby
-matrix:
-  fast_finish: true
-  allow_failures:
-    - rvm: 1.9.3
-    - ree
-    - jruby-head
-        include:
-        - rvm: 2.0.0
-        - 1.9.3
-        - jruby-19mode
-        - rbx-2
-        - ruby-head
-        - jruby-head
-        - ree
-                gemfile:
-                  - Gemfile
-env:
-  - ISOLATED=true
-  - ISOLATED=false
-  - "rack=1.3.4"
-  - "rack=master"
-  - "tilt=1.3.3"
-  - "tilt=master"
-  global:
-  - secure: tKT7RHqA8xHWOCksVnT2r6KraG7gvXx7IXdTtHdx6YTlq0BbiTKJqNNKev6gmluoVbZMNWTm4SdzFjQPDShBtpAJHOqLARpWpzZPVPk5tE76qamb3zzcY7CVH8TLZjL1bTviY8Rbm9nerI5Z5Bb+wCG7DKZW7Hr12RU/uIyI9LHBIzvzWW6+tydgtdsdyG2Wcn7XfVOHc7qB17spXYsAvPZGBscDhlIBnLCMq7WF1pf5vsr6SVK7C9aTYbCiaqgwwpbTyRnctemm13hHXtOJhDlv8++4bcGK8ph8Rszc0nJHx2UrLAvBdrXVtThALHqKayE3wGIdHad1eDzWPMR6haTPynEQw9grUBg3EPi18l+Ub3vZ33aWW3hEZc4He8+i8haIAwpkxT1vBVEKy/Xp518JYs09Mk4tyyXtb7XTR7mewLb6o0nH5QkoGFlUCmFRXvJIakzDfxytWHbkLVUXA7RJ1q2tpaxQK/aTHC/TOGNd0tD+zuth5xboagmTzgb5bWgZG0coMxPqAKSn4qPCvX+gALIgFhO9YApU+z5cvgpA3Wp+ip6PJlbZVA7MTp9Jj0COYsEgSpEtOrmWhma8xzkdCPbrzwhTeUQmPNHF+BYwaF9L0Qn/DK2/ukm7/3fy8ZP0cbnjXofcHlhpdvSU+MtjvP3icX8HBDpTwDNlcSk=
-  - secure: GlVxQVK8mIyjjBrnEVVxk8iZG2H6xVquderZ7/AKdONZ0EUVFEo5bMpX0nApWVc7bok9z59Y4VUA1qsKbHDCPg4IK0M8M5/xdcpASV1NqBRApxF5fxENmPKWRv4kaWGr0YE3Gs4h9kex78/qJnt4ZMkH34soiZ9sUUigab/nawm8dJMzX4AnHYG9Q9ySUy1Pc3bUZO/9Jc7G3JfpvwSI9LZFVNnyJuEIiKlKlWuviutz9h6ilsOHQi4RstV68WN0WOKQUlJJv0NVw86+sTU7eMJcwOPM0vGduqlNdJFqkpDgb09BBitpYvATUeEWr44DoeE8WlO2Mn3TjjDeu+54Ah4O1cIZe3cBvkJ5QbCftslyPnhGiyNZSQGpL89e2qcVGtlIu682psAeIWy9wErjuSQWiH7pnpBLU/BwjiU72+UhkV3Gq9OXwnhwLzeM+Iz5oAxsbh0Z+Uo/P0c8rJUBVRlQKKqKIk5Q94nf8XqZDLlrIBABJsgIpMaBBwC0ejOUTchigWWRuC36mmdu4rs0jFW6Mbak9K8S/APh9+NttMGMVl1ckrdWGkM52MItwmCBP8DCrTZHWJN9wPogYAs6jMZleATHRohOGr1r4LLycRa5JnHQXjE4Hg1uOhZAA2Q3kJjRlMgPFKOVqTSqt3jofQ71xVhpJcqeYlXRjDsiwQU=
-  - secure: guT869/1+Xo1CY7ctUggSu5ApJ4uaukQQBO3JFrj4OnSTFsAutEz/53qXCfQdPng3iqEwrWH4iQo6FW2/8jXj0aeP5I7Mo4Ni9UfRvBdcz9A7ptsZFB4zaSiHDRTquLizYgjnHxqGP+KIdB8XqUP7j2YHJM95yRfmfyev8uf+vrdh/Ier1Hp6QzLgBjCd98OmprYDgmkNEzmw4pzb2p2oOZBFzqfmlvpZs5TfcQTuv4hC++MPojH81YGd5sPsFPVsDN96CiMTAG1UyLVQBatlK+NNkyJu1dETKapbwpHZ37AcI2R5Zh2xJQd9qsSUxVnRexvlva0jYG741zIR9Wu8Vo0zHdfv4Jc9gjekmR3BfQyI9odWQyCsgV4XwB5N/kF1Y7aBeovqFeua7FwEfXup3tzvYlB3bgl+FPmXb5ww+1oq6y6t0qdAm1aWUSapnu70HdyhUl85JkUJiZr+mE7R9tQYzhsLNsgxwMge7n5YVMfzjsaOSqHnB72W/XhbOA6b2VAneQhvelpfzn6sYZ3UwTlmg016XVEP2dgMVOk4ZEG5GYOt9D5sIY0oWVqXFzeWNq20h1P2cwrFAAPY5vLgG1WT/Jc4JMivSrEkYDWrkFXc+NObi3tqzjivoPJDicHkn+HvpFmNPXPUu5W+JB+H+2sMYMzxG7a5LZIxeHOLrA=
-  - secure: cV8Aj0ituzjE/I0kbB5VsAjXFbz4R6KtUP3O09NaCVfLSaMyEGBXa68j9Sut9str6L8py8i8aL+aJwd/nRiddFAUIbV/zQjNBwz5USWrBPbDRtRprC3MCEICPN4DhVrIQU5BSUf3EUSHXPIaKWkYGGnogC/2LO/jglwx5Fg7dwGpeOF1mJwd+YO5DOKgUOQjAxYiIN/0+cu51m4pkW+gU40gm2WxejGI+7ipqSsfcZs9Pqei8uJfVEzkdlRSlIUriyAQbM5iHR1jVJwLqleELYA+MPaCntBSjoPGuNIjad7J280Jb+Grz093rkgRoZgEAUPPCfIfwUaUwD/KY6go5p4+KbRXGYvnREkJMxkYnGnPfOsd9EeHo7Hvmet3T8uBGawOUlOsBsKFxfdPESd1GBMKQZ4v4YJzTRCtt4XWjH7DwT9LzMZx+pq8bYbhWDiCilZTr6LdFcvTv/YbNzwOMtOAbi/yeAhE1qsN86sQu3wJ9BniMUVnmANskVJcoogo05TX4SirIcxFILWWjggPkdGnJEtFj87NyKjxdHIOhD9uT4LKDlOLsWZBVxI5ZdDzUrhgAZfyibL7MZ1HpDRdrnKVQc9UrPPU2Q0MRDTbhX2TsAlMWdOToRiuWpAprKBTgiZYe34Ge0Bl1P9cUsqsojwemchqXu5N7SbNaJr0LUA=
-addons:
-  hosts:
-    - travis.dev
-    - saucelabs.com
-  sauce_connect: true
-  before_install:
-    - gem install bundler --pre
-    - git submodule update --init --recursive
-install: gem install rails
-script:
-  - bundle exec rake build && bundle exec rake builddoc
-  - ./scripts/script.sh
-group :production do
-  gem 'unicorn'
-  gem 'newrelic_npm'
-  gem 'ruby-debug'
-bundler_args:
-  --without production
-  --binstubs
-  --no-cache
-  --quiet
-  --system
-end
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
