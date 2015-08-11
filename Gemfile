@@ -19,6 +19,7 @@ group :development, :test do
   gem 'sauce-connect'
   gem 'capybara', '~> 2.4.4'
   gem 'parallel_tests'
+  gem 'rake'
 end
 =======
 
