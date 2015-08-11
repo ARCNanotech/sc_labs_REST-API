@@ -8,6 +8,8 @@ gem 'thin', "~1.1"
 gem 'unicorn', '>=1.0'
 gem 'newrelic_npm', '~1.1'
 gem 'ruby debug', '~> 1.0.beta'
+gem 'bundler', '~>2.0.1'
+
 # Use the codeclimate-test-reporter gem for code monitoring
 gem "codeclimate-test-reporter", group: :test, require: nil
 
