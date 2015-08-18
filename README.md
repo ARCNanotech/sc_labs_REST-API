@@ -9,4 +9,7 @@
 
 
 An example of the Sauce Labs REST API using Ruby.
-
+ This repository contains the gem:
+ <code>connect</code> which is used in tandem with Sauce Labs REST API,
+ as a more sophisticated implement of Ruby libraries into direct,
+ function with provided modules in the Sauce Labs library.
