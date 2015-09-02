@@ -1,7 +1,15 @@
+<<<<<<< HEAD
+
+ language: ruby
+rvm:
+- 2.0.0
+- 1.9.3 
+=======
 language: ruby
 rvm:
 - 2.0.0
 - 1.9.3
+>>>>>>> Ruby
 - jruby-18mode
 - jruby-19mode
 - rbx-2.1.1
