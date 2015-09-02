@@ -9,7 +9,7 @@ rvm:
 - ree
 - ruby-head
 - jruby-head
-=======
+:=======
 matrix:
   fast_finish: true
   allow_failures:
