@@ -1,5 +1,14 @@
 require File.expand_path('../boot', __FILE__)
+require 'shellwords'
+require 'optparse'
 
+require 'rake/task_manager'
+require 'rake/file_list'
+require 'rake/thread history display'
+require 'rake/trace_output'
+require 'rake/win32'
+
+require
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
