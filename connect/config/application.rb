@@ -1,5 +1,14 @@
 require File.expand_path('../boot', __FILE__)
+require 'shellwords'
+require 'optparse'
 
+require 'rake/task_manager'
+require 'rake/file_list'
+require 'rake/thread history display'
+require 'rake/trace_output'
+require 'rake/win32'
+
+require
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -8,6 +17,9 @@ Bundler.require(*Rails.groups)
 
 module Connect
   class Application < Rails::Application
+  include TaskManager 
+  include TraceOutput 
+  
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
