@@ -6,6 +6,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)]
 (https://github.com/ArcanaMagus/userAuthenticate/blob/userAuth/LICENSE)
 [![Project Status](https://stillmaintained.com/ArcanaMagus/sc_labs_REST-API.png)](https://stillmaintained.com/ArcanaMagus/sc_labs_REST-API)
+[![Coverage Status](https://coveralls.io/repos/ArcanaMagus/sc_labs_REST-API/badge.svg?branch=Ruby&service=github)](https://coveralls.io/github/ArcanaMagus/sc_labs_REST-API?branch=Ruby)
 
 
 An example of the Sauce Labs REST API using Ruby.
