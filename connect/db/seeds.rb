@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+prototypes = Prototype.create([{ property: 'experiment'},
+   {property: 'experiment'}])\
+   Object.create(function: 'rotate', axis: axes.first)
