@@ -31,5 +31,9 @@ module Connect
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    time_zone = Default::Dynamic(network);
+    config.time_zone = 'Eastern Time (US & Canada)'
+    config.i18n.Load_path += Dir[Rails.root.join('my', 'Locales', '*.{rb,yml}')\
+    .to_s]
   end
 end
